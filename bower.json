@@ -1,0 +1,18 @@
+{
+  "name": "layout-builder",
+  "version": "1.0.0",
+  "authors": [
+    "Duke <srdukex@gmail.com>"
+  ],
+  "license": "GNUv3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "packery": "~1.4.3"
+  }
+}

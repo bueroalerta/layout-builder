@@ -1,0 +1,23 @@
+{
+  "name": "layout-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Duke <srdukex@gmail.com>",
+  "license": "GNUv3",
+  "devDependencies": {
+    "broccoli": "^0.16.7",
+    "broccoli-babel-transpiler": "^5.4.5",
+    "broccoli-bower": "^0.2.1",
+    "broccoli-concat": "0.0.13",
+    "broccoli-funnel": "^0.2.8",
+    "broccoli-merge-trees": "^0.2.3",
+    "broccoli-static-compiler": "^0.2.1"
+  },
+  "dependencies": {
+    "broccoli-react": "^0.7.1"
+  }
+}
