@@ -3,14 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Test</title>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+    <script src="./packery.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.18/require.min.js"></script>
     <script src="./layout-builder.js" charset="utf-8"></script>
     <script type="text/javascript">
        require(['layout-builder'], function(LayoutBuilder) {
-         new LayoutBuilder("#builder");
+         new LayoutBuilder("#builder", {container: 1000});
        })
     </script>
+    <style media="screen">
+      #container {
+        margin: 0 auto;
+      }
+      label {
+        display: block;
+      }
+      .grid {
+        float: left;
+        padding: 10px;
+      }
+      #container .grid button {
+        padding: 10px 3px;
+        border: 1px solid #CCC;
+        background: transparent
+      }
+      .grid button:hover {
+        border: 1px solid #333
+      }
+      .grid .resize {
+        float: right;
+      }
+      .grid > div {
+        border: 1px solid #333;
+        height: 100%;
+        background: #F7F7F7
+      }
+    </style>
   </head>
   <body>
 
