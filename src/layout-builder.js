@@ -1,8 +1,8 @@
 import Layout from './layout';
 
 class LayoutBuilder {
-  constructor(container) {
-    React.render(<Layout name="John" />, document.querySelector(container));
+  constructor(container, options) {
+    React.render(<Layout />, document.querySelector(container));
   }
 }
 
