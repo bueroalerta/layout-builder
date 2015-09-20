@@ -1,5 +1,6 @@
 var Grid = React.createClass({
   componentDidMount() {
+    pckry.appended(this.getDOMNode())
     this.setState({ id: pckry.items.length } );
   },
   resizeFn(size) {

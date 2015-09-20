@@ -1,6 +1,14 @@
 import Grid from './grid';
 
 var Layout = React.createClass({
+  componentDidMount() {
+    const container = this.refs.container.getDOMNode();
+    window.pckry = new Packery(container, {
+      itemSelector: '.grid',
+      gutter: 0
+    });
+    window.pckry.bindResize();
+  },
   getInitialState() {
     return { grids: [], containerSize: 1000, columns: 4 };
   },
