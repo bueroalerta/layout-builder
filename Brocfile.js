@@ -17,6 +17,8 @@ tree = concat(tree, {
 
 tree = react(tree, {extensions: ['js']});
 
+vendor = funnel('vendor')
+
 var demo = funnel('src', {files: ['demo.html']});
 
-module.exports = merge([demo, tree]);
+module.exports = merge([vendor, demo, tree]);
